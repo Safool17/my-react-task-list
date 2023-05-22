@@ -1,26 +1,20 @@
 import "./App.css";
 import Header from "./components/Header";
-import TaskList from "./components/TaskList";
+import Listatarea from "./components/Listatarea";
 import Clear from "./components/Clear";
 import Contador from "./components/Contador";
+import ListaTareas from "./components/Listatarea";
 
 function App() {
-  const list = [
-    { list: "diapers change" },
-    { list: "give probioticos" },
-    { list: "give milk" },
-    { list: "get some exercise" },
-    { list: "sleep" },
-    { list: "Bath" },
-  ];
   return (
     <div className="App">
-      <Header />
-      {list.map((tareas) => (
-        <TaskList list={tareas.list} />
-      ))}
-      <Clear />
-      <Contador />
+      <div className="Tareas-principal">
+        <Header />
+        <ListaTareas />
+
+        <Clear />
+        <Contador />
+      </div>
     </div>
   );
 }

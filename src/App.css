@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: white;
+  background-color: black;
+  font-family: lato, sans-serif;
+  margin-top: 40px;
+}
+
+/* Titulo de la aplicacion */
+
+.Header {
+  color: rgb(24, 28, 223);
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/*todos los elemntos de la app */
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* lista de tareas*/
+
+.Tareas-principal {
+  width: 600px;
+  min-height: 500px;
+  background-color: gray;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+}
